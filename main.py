@@ -1,7 +1,9 @@
+# This Code is Responsible to pull camera feed from and esp32CAM Ip address in the same network and display the camera stream in your pycharm, make sure you install OpenCV before using the code
+
 import cv2
 
 # Replace 'IP_ADDRESS' with the IP address of your ESP32-CAM module
-camera_url = 'http://192.168.0.104:81/stream'
+camera_url = 'http://IP_ADDRESS:81/stream'
 
 # Create a VideoCapture object
 cap = cv2.VideoCapture(camera_url)
